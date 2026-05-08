@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Suzanne Gay — pianist, vocalist, and composer based on Salt Spring Island, BC. Piano and vocal lessons, live performance bookings." />
+
+  <title>Suzanne Gay Music | Salt Spring Island</title>
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Suzanne Gay Music | Salt Spring Island" />
+  <meta property="og:description" content="Pianist, vocalist, and composer based on Salt Spring Island, BC. Piano and vocal lessons for all ages, plus live performance bookings." />
+  <meta property="og:image"       content="assests/piano.png" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Suzanne Gay Music | Salt Spring Island" />
+  <meta name="twitter:description" content="Pianist, vocalist, and composer based on Salt Spring Island, BC. Piano and vocal lessons for all ages, plus live performance bookings." />
+  <meta name="twitter:image"       content="assests/piano.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav id="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="#hero" class="nav-logo">Suzanne Gay <span>Music</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#teaching">Lessons</a></li>
+        <li><a href="#performing">Performing</a></li>
+        <li><a href="#waitlist">Waitlist</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO
+       EDIT: swap piano.png for your preferred photo filename
+       ============================================================ -->
+  <section id="hero">
+    <div class="hero-bg" role="img" aria-label="Hands playing piano"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <!-- Grain texture: inline SVG feTurbulence, most reliable cross-browser approach -->
+    <svg class="hero-grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <filter id="grain-filter" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0"/>
+      </filter>
+      <rect width="100%" height="100%" filter="url(#grain-filter)"/>
+    </svg>
+
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Salt Spring Island, BC</p>
+      <h1>Suzanne Gay Music</h1>
+      <p class="hero-sub">Pianist · Vocalist · Composer · Salt Spring Island</p>
+
+      <div class="hero-ctas">
+        <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+        <a href="#performing" class="btn btn-outline">Book a Performance</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CREDIBILITY STRIP
+       EDIT: update venue/ensemble names as needed
+       ============================================================ -->
+  <div class="credibility-strip" aria-label="Featured with and at">
+    <div class="container">
+      <p class="cred-label">Featured with &amp; at</p>
+      <div class="cred-items">
+        <!-- EDIT: update these names -->
+        <span>Hastings House</span>
+        <span class="cred-sep" aria-hidden="true">·</span>
+        <span>The Sunny Siders</span>
+        <span class="cred-sep" aria-hidden="true">·</span>
+        <span>Honey</span>
+        <span class="cred-sep" aria-hidden="true">·</span>
+        <span>Salt Spring Music Festival</span>
+        <span class="cred-sep" aria-hidden="true">·</span>
+        <span>Jim Shultz Duo</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       ABOUT
+       EDIT: bio text below
+       ============================================================ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-inner">
+
+        <div class="about-aside reveal">
+          <!-- EDIT: swap filename if you have a separate portrait -->
+          <img
+            src="assests/Suzzane-Selfie.jpeg"
+            alt="Suzanne Gay"
+            class="about-headshot"
+            loading="lazy"
+          />
+          <div class="about-genre-tags reveal-stagger">
+            <span class="tag">Jazz</span>
+            <span class="tag">Blues</span>
+            <span class="tag">Classical</span>
+            <span class="tag">Folk</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="section-label reveal">About</span>
+          <h2 class="reveal">A Salt Spring original</h2>
+          <hr class="gold-rule" />
+
+          <!-- EDIT: bio — keep to 3–4 sentences -->
+          <p class="reveal">
+  I grew up on Salt Spring Island surrounded by music — and never really left. My background spans jazz, blues, classical, and folk, and I hold a degree in Jazz Performance from Vancouver Island University, but what drives me is simpler than that: finding the moment when music stops feeling like technique and starts feeling like <em>you</em>.
+</p>
+
+          <!-- Pull quote — EDIT or remove -->
+          <blockquote class="about-pull-quote reveal">
+            "A sultry voice and emotionally charged performances that stay with you long after the last note."
+          </blockquote>
+
+          <a href="https://suzannegay.bandcamp.com" target="_blank" rel="noopener" class="btn btn-navy reveal">
+            Listen on Bandcamp
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       STATS ROW
+       EDIT: update numbers/labels as needed
+       ============================================================ -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- EDIT: adjust numbers to taste -->
+        <div class="stat-item reveal">
+          <span class="stat-number">12+</span>
+          <span class="stat-label">Years Teaching &amp; Performing</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item reveal">
+          <span class="stat-number">All Ages</span>
+          <span class="stat-label">Students Welcome</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item reveal">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Performance Formats</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       TEACHING / LESSONS
+       EDIT: rates in the table (replace "TBD" when confirmed)
+       ============================================================ -->
+  <section id="teaching">
+    <div class="container">
+      <span class="section-label reveal">Private Instruction</span>
+      <h2 class="reveal">Lessons</h2>
+      <hr class="gold-rule" />
+
+      <div class="teaching-inner">
+        <div class="teaching-text reveal">
+
+          <!-- EDIT: lesson description -->
+          <p>
+  Piano lessons and vocal coaching for all ages and experience levels. My approach is integrative — technique, theory, ear training, and repertoire you actually love. Whether you want to play at campfires or on stage, we'll build something real.
+</p>
+
+          <!-- Capacity notice — EDIT dates or message as needed -->
+          <div class="capacity-notice" role="note" aria-label="Waitlist notice">
+            <span class="capacity-notice-icon" aria-hidden="true">🎹</span>
+            <p>
+              <strong>Currently at reduced capacity.</strong> I'm accepting waitlist signups for new students. Lessons resume in full in <strong>September 2026</strong> — add your name below and I'll reach out when spots open.
+            </p>
+          </div>
+
+          <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+        </div>
+
+        <!-- Rates card — EDIT the rate amounts when confirmed -->
+        <div class="rates-card reveal">
+          <h3>Lesson Rates</h3>
+          <table class="rates-table" aria-label="Lesson rates by duration">
+            <thead>
+              <tr>
+                <th scope="col">Duration</th>
+                <th scope="col">Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- EDIT: replace "TBD" with actual rates, e.g. "$40" -->
+              <tr>
+                <td>30 minutes</td>
+                <td><span class="tbd">TBD</span></td>
+              </tr>
+              <tr>
+                <td>45 minutes</td>
+                <td><span class="tbd">TBD</span></td>
+              </tr>
+              <tr>
+                <td>60 minutes</td>
+                <td><span class="tbd">TBD</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- EDIT: rate notes -->
+          <p class="rates-note">Rates confirmed at time of booking. Sliding scale available — just ask.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PERFORMING
+       EDIT: description, email address
+       ============================================================ -->
+  <section id="performing">
+    <div class="container">
+      <span class="section-label reveal">Live Music</span>
+      <h2 class="reveal">Live Performance</h2>
+      <hr class="gold-rule" />
+
+      <!-- EDIT: performing description -->
+      <p class="reveal" style="max-width: 580px;">
+        Suzanne brings warmth, depth, and soul to any room — from intimate gallery openings to full festival stages. Available in multiple formats to suit your event and budget.
+      </p>
+
+      <!-- Format cards — EDIT labels/descriptions as needed -->
+      <div class="formats-grid reveal-stagger">
+        <div class="format-card">
+          <div class="format-icon" aria-hidden="true">🎹</div>
+          <h3>Solo</h3>
+          <p>Piano &amp; voice — intimate and versatile</p>
+        </div>
+        <div class="format-card">
+          <div class="format-icon" aria-hidden="true">🎸</div>
+          <h3>Duo</h3>
+          <p>Guitar &amp; vocals with Jim Shultz</p>
+        </div>
+        <div class="format-card">
+          <div class="format-icon" aria-hidden="true">🎶</div>
+          <h3>Trio</h3>
+          <p>Honey — acappella harmony group</p>
+        </div>
+        <div class="format-card">
+          <div class="format-icon" aria-hidden="true">🎷</div>
+          <h3>Full Band</h3>
+          <p>The Sunny Siders — 7-piece jazz ensemble</p>
+        </div>
+      </div>
+
+      <!-- VIDEO EMBED
+           Currently shown as a thumbnail link because embedding is disabled on this video.
+           To switch to a full embed:
+             1. Go to YouTube Studio → Content → select the video → Details → More options
+             2. Check "Allow embedding" and save
+             3. Replace the <a class="video-thumb-link"> block below with:
+           <div class="video-wrap" aria-label="Suzanne Gay performance video">
+             <iframe src="https://www.youtube.com/embed/_3nNeD6kusQ"
+               title="Suzanne Gay — Live Performance"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowfullscreen loading="lazy"></iframe>
+           </div>
+           ===================================================================== -->
+      <a
+        class="video-thumb-link reveal"
+        href="https://youtu.be/_3nNeD6kusQ"
+        target="_blank"
+        rel="noopener"
+        aria-label="Watch Suzanne Gay perform on YouTube"
+      >
+        <img
+          src="https://img.youtube.com/vi/_3nNeD6kusQ/maxresdefault.jpg"
+          alt="Suzanne Gay — Live Performance"
+          class="video-thumb-img"
+        />
+        <span class="video-play-btn" aria-hidden="true">
+          <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7a8.5 8.5 0 00-6-6C55.8 0 34 0 34 0S12.2 0 7.5 1.7a8.5 8.5 0 00-6 6C0 12.4 0 24 0 24s0 11.6 1.5 16.3a8.5 8.5 0 006 6C12.2 48 34 48 34 48s21.8 0 26.5-1.7a8.5 8.5 0 006-6C68 35.6 68 24 68 24s0-11.6-1.5-16.3z" fill="#ff0000"/><path d="M27 34l18-10-18-10v20z" fill="#fff"/></svg>
+        </span>
+      </a>
+
+      <!-- EDIT: email address below -->
+      <div class="performing-cta reveal">
+        <a href="mailto:suzmuzik@gmail.com" class="btn btn-navy">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WAITLIST SIGNUP
+       EDIT: replace REPLACE_WITH_FORM_ID with your Formspree form ID
+         1. formspree.io → create account → new form → copy ID
+       ============================================================ -->
+  <section id="waitlist">
+    <div class="container">
+      <div class="waitlist-inner">
+        <span class="section-label reveal">Stay in the Loop</span>
+        <h2 class="reveal">Join the Waitlist</h2>
+        <hr class="gold-rule" />
+
+        <!-- EDIT: copy text -->
+        <p class="reveal">
+          Lessons are currently at reduced capacity. Drop your name and email below and I'll be in touch when spots open up in September.
+        </p>
+
+        <!-- Waitlist form -->
+        <form
+          class="signup-form reveal"
+          id="waitlist-form"
+          action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+          method="POST"
+          novalidate
+        >
+          <!-- Honeypot — leave as-is -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Your first name" required autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="interest">What are you interested in?</label>
+            <div class="select-wrap">
+              <select id="interest" name="interest" required>
+                <option value="" disabled selected>Choose one…</option>
+                <option value="Piano Lessons">Piano Lessons</option>
+                <option value="Vocal Coaching">Vocal Coaching</option>
+                <option value="Both">Both (piano + voice)</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Add Me to the Waitlist</button>
+        </form>
+
+        <!-- Thank-you message — shown by JS after successful submit -->
+        <div class="form-thankyou" id="form-thankyou" role="alert" aria-live="polite" tabindex="-1">
+          <p>
+            <strong>You're on the list!</strong><br />
+            Thanks for signing up. I'll be in touch when spots open up in September. Can't wait to make music with you.
+            <br /><br />
+            — Suzanne
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       EDIT: phone, links, tagline
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" aria-label="Back to top">Suzanne Gay <span>Music</span></a>
+          <p class="footer-tagline">Pianist · Vocalist · Composer</p>
+          <p class="footer-tagline" style="margin-top:0.3rem;">Salt Spring Island, BC</p>
+        </div>
+
+        <div class="footer-contact">
+          <!-- EDIT: phone number and email -->
+          <p><a href="tel:+12502217464">250-221-7464</a></p>
+          <p><a href="mailto:suzmuzik@gmail.com">suzmuzik@gmail.com</a></p>
+        </div>
+
+        <div class="footer-social">
+          <!-- EDIT: social links -->
+          <a href="https://www.facebook.com/suzmuzik/" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            Facebook
+          </a>
+          <a href="https://suzannegay.bandcamp.com" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 18.75l7.437-13.5H24l-7.438 13.5z"/></svg>
+            Bandcamp
+          </a>
+          <a href="mailto:suzmuzik@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year">2026</span> Suzanne Gay Music. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    // ── Nav scroll effect
+    const nav = document.getElementById('site-nav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 60);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ── Mobile menu toggle
+    const toggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ── Footer year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // ── Waitlist form AJAX submit
+    const form     = document.getElementById('waitlist-form');
+    const thankYou = document.getElementById('form-thankyou');
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const data      = new FormData(form);
+      const submitBtn = form.querySelector('[type="submit"]');
+      submitBtn.disabled    = true;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST', body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          thankYou.classList.add('visible');
+          thankYou.focus();
+        } else {
+          const json = await res.json().catch(() => ({}));
+          alert(json.error || 'Something went wrong. Please email suzmuzik@gmail.com directly.');
+          submitBtn.disabled    = false;
+          submitBtn.textContent = 'Add Me to the Waitlist';
+        }
+      } catch {
+        alert('Could not connect. Please email suzmuzik@gmail.com directly.');
+        submitBtn.disabled    = false;
+        submitBtn.textContent = 'Add Me to the Waitlist';
+      }
+    });
+  </script>
+
+  <!-- Animations (GSAP + Lenis) — loaded last so DOM is ready -->
+  <script src="animations.js"></script>
+
+</body>
+</html>
