@@ -603,9 +603,12 @@ section {
   outline-offset: 3px;
 }
 
-.format-card .format-icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.format-svg {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 0 auto 1.2rem;
+  overflow: visible;
 }
 
 .format-card h3 {

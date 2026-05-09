@@ -104,4 +104,27 @@
     ease: 'none',
   });
 
+  // ── 7. Format card SVG sketch-draw animation ──────────────────
+  gsap.utils.toArray('.format-svg').forEach(svg => {
+    const strokes = Array.from(svg.querySelectorAll('path, circle, line'));
+
+    strokes.forEach(el => {
+      const len = el.getTotalLength();
+      gsap.set(el, { strokeDasharray: len, strokeDashoffset: len });
+    });
+
+    ScrollTrigger.create({
+      trigger: svg,
+      start: 'top 88%',
+      onEnter: () => {
+        gsap.to(strokes, {
+          strokeDashoffset: 0,
+          duration: 1.4,
+          stagger: 0.07,
+          ease: 'power2.inOut',
+        });
+      },
+    });
+  });
+
 }());
