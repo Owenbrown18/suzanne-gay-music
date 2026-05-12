@@ -50,12 +50,10 @@
 
   <!-- ============================================================
        HERO
-       EDIT: swap piano.png for your preferred photo filename
        ============================================================ -->
   <section id="hero">
-    <div class="hero-bg" role="img" aria-label="Hands playing piano"></div>
+    <div class="hero-bg" id="cms-hero_image" role="img" aria-label="Hands playing piano"></div>
     <div class="hero-overlay" aria-hidden="true"></div>
-    <!-- Grain texture: inline SVG feTurbulence, most reliable cross-browser approach -->
     <svg class="hero-grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
       <filter id="grain-filter" x="0" y="0" width="100%" height="100%">
         <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" stitchTiles="stitch" result="noise"/>
@@ -65,13 +63,13 @@
     </svg>
 
     <div class="container hero-content">
-      <p class="hero-eyebrow">Salt Spring Island, BC</p>
-      <h1>Suzanne Gay Music</h1>
-      <p class="hero-sub">Pianist · Vocalist · Composer · Salt Spring Island</p>
+      <p class="hero-eyebrow" id="cms-hero_eyebrow">Salt Spring Island, BC</p>
+      <h1 id="cms-hero_title">Suzanne Gay Music</h1>
+      <p class="hero-sub" id="cms-hero_subtitle">Pianist · Vocalist · Composer · Salt Spring Island</p>
 
       <div class="hero-ctas">
-        <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
-        <a href="#performing" class="btn btn-outline">Book a Performance</a>
+        <a href="#waitlist" class="btn btn-primary" id="cms-hero_cta_primary">Join the Waitlist</a>
+        <a href="#performing" class="btn btn-outline" id="cms-hero_cta_secondary">Book a Performance</a>
       </div>
     </div>
   </section>
@@ -79,22 +77,20 @@
 
   <!-- ============================================================
        CREDIBILITY STRIP
-       EDIT: update venue/ensemble names as needed
        ============================================================ -->
   <div class="credibility-strip" aria-label="Featured with and at">
     <div class="container">
       <p class="cred-label">Featured with &amp; at</p>
       <div class="cred-items">
-        <!-- EDIT: update these names -->
-        <span>Hastings House</span>
+        <span id="cms-cred_item_1">Hastings House</span>
         <span class="cred-sep" aria-hidden="true">·</span>
-        <span>The Sunny Siders</span>
+        <span id="cms-cred_item_2">The Sunny Siders</span>
         <span class="cred-sep" aria-hidden="true">·</span>
-        <span>Honey</span>
+        <span id="cms-cred_item_3">Honey</span>
         <span class="cred-sep" aria-hidden="true">·</span>
-        <span>Salt Spring Music Festival</span>
+        <span id="cms-cred_item_4">Salt Spring Music Festival</span>
         <span class="cred-sep" aria-hidden="true">·</span>
-        <span>Jim Shultz Duo</span>
+        <span id="cms-cred_item_5">Jim Shultz Duo</span>
       </div>
     </div>
   </div>
@@ -102,18 +98,17 @@
 
   <!-- ============================================================
        ABOUT
-       EDIT: bio text below
        ============================================================ -->
   <section id="about">
     <div class="container">
       <div class="about-inner">
 
         <div class="about-aside reveal">
-          <!-- EDIT: swap filename if you have a separate portrait -->
           <img
             src="assests/Suzzane-Selfie.jpeg"
             alt="Suzanne Gay"
             class="about-headshot"
+            id="cms-about_headshot"
             loading="lazy"
           />
           <div class="about-genre-tags reveal-stagger">
@@ -126,16 +121,14 @@
 
         <div class="about-text">
           <span class="section-label reveal">About</span>
-          <h2 class="reveal">A Salt Spring original</h2>
+          <h2 class="reveal" id="cms-about_heading">A Salt Spring original</h2>
           <hr class="gold-rule" />
 
-          <!-- EDIT: bio — keep to 3–4 sentences -->
-          <p class="reveal">
+          <p class="reveal" id="cms-about_text">
   I grew up on Salt Spring Island surrounded by music — and never really left. My background spans jazz, blues, classical, and folk, and I hold a degree in Jazz Performance from Vancouver Island University, but what drives me is simpler than that: finding the moment when music stops feeling like technique and starts feeling like <em>you</em>.
 </p>
 
-          <!-- Pull quote — EDIT or remove -->
-          <blockquote class="about-pull-quote reveal">
+          <blockquote class="about-pull-quote reveal" id="cms-about_pull_quote">
             "A sultry voice and emotionally charged performances that stay with you long after the last note."
           </blockquote>
 
@@ -151,25 +144,23 @@
 
   <!-- ============================================================
        STATS ROW
-       EDIT: update numbers/labels as needed
        ============================================================ -->
   <div class="stats-strip">
     <div class="container">
       <div class="stats-grid">
-        <!-- EDIT: adjust numbers to taste -->
         <div class="stat-item reveal">
-          <span class="stat-number">12+</span>
-          <span class="stat-label">Years Teaching &amp; Performing</span>
+          <span class="stat-number" id="cms-stat_1_number">12+</span>
+          <span class="stat-label"  id="cms-stat_1_label">Years Teaching &amp; Performing</span>
         </div>
         <div class="stat-divider" aria-hidden="true"></div>
         <div class="stat-item reveal">
-          <span class="stat-number">All Ages</span>
-          <span class="stat-label">Students Welcome</span>
+          <span class="stat-number" id="cms-stat_2_number">All Ages</span>
+          <span class="stat-label"  id="cms-stat_2_label">Students Welcome</span>
         </div>
         <div class="stat-divider" aria-hidden="true"></div>
         <div class="stat-item reveal">
-          <span class="stat-number">4</span>
-          <span class="stat-label">Performance Formats</span>
+          <span class="stat-number" id="cms-stat_3_number">4</span>
+          <span class="stat-label"  id="cms-stat_3_label">Performance Formats</span>
         </div>
       </div>
     </div>
@@ -178,26 +169,23 @@
 
   <!-- ============================================================
        TEACHING / LESSONS
-       EDIT: rates in the table (replace "TBD" when confirmed)
        ============================================================ -->
   <section id="teaching">
     <div class="container">
       <span class="section-label reveal">Private Instruction</span>
-      <h2 class="reveal">Lessons</h2>
+      <h2 class="reveal" id="cms-lessons_heading">Lessons</h2>
       <hr class="gold-rule" />
 
       <div class="teaching-inner">
         <div class="teaching-text reveal">
 
-          <!-- EDIT: lesson description -->
-          <p>
+          <p id="cms-lessons_description">
   Piano lessons and vocal coaching for all ages and experience levels. My approach is integrative — technique, theory, ear training, and repertoire you actually love. Whether you want to play at campfires or on stage, we'll build something real.
 </p>
 
-          <!-- Capacity notice — EDIT dates or message as needed -->
           <div class="capacity-notice" role="note" aria-label="Waitlist notice">
             <span class="capacity-notice-icon" aria-hidden="true">🎹</span>
-            <p>
+            <p id="cms-capacity_notice">
               <strong>Currently at reduced capacity.</strong> I'm accepting waitlist signups for new students. Lessons resume in full in <strong>September 2026</strong> — add your name below and I'll reach out when spots open.
             </p>
           </div>
@@ -205,7 +193,6 @@
           <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
         </div>
 
-        <!-- Rates card — EDIT the rate amounts when confirmed -->
         <div class="rates-card reveal">
           <h3>Lesson Rates</h3>
           <table class="rates-table" aria-label="Lesson rates by duration">
@@ -216,23 +203,21 @@
               </tr>
             </thead>
             <tbody>
-              <!-- EDIT: replace "TBD" with actual rates, e.g. "$40" -->
               <tr>
                 <td>30 minutes</td>
-                <td><span class="tbd">TBD</span></td>
+                <td><span class="tbd" id="cms-rate_30min">TBD</span></td>
               </tr>
               <tr>
                 <td>45 minutes</td>
-                <td><span class="tbd">TBD</span></td>
+                <td><span class="tbd" id="cms-rate_45min">TBD</span></td>
               </tr>
               <tr>
                 <td>60 minutes</td>
-                <td><span class="tbd">TBD</span></td>
+                <td><span class="tbd" id="cms-rate_60min">TBD</span></td>
               </tr>
             </tbody>
           </table>
-          <!-- EDIT: rate notes -->
-          <p class="rates-note">Rates confirmed at time of booking. Sliding scale available — just ask.</p>
+          <p class="rates-note" id="cms-rates_note">Rates confirmed at time of booking. Sliding scale available — just ask.</p>
         </div>
 
       </div>
@@ -242,7 +227,6 @@
 
   <!-- ============================================================
        PERFORMING
-       EDIT: description, email address
        ============================================================ -->
   <section id="performing">
     <div class="container">
@@ -250,16 +234,13 @@
       <h2 class="reveal">Live Performance</h2>
       <hr class="gold-rule" />
 
-      <!-- EDIT: performing description -->
-      <p class="reveal" style="max-width: 580px;">
+      <p class="reveal" id="cms-performing_description" style="max-width: 580px;">
         Suzanne brings warmth, depth, and soul to any room — from intimate gallery openings to full festival stages. Available in multiple formats to suit your event and budget.
       </p>
 
-      <!-- Format cards — EDIT labels/descriptions as needed -->
       <div class="formats-grid reveal-stagger">
 
         <div class="format-card">
-          <!-- Solo: grand piano front view with open lid -->
           <svg class="format-svg" viewBox="0 0 96 82" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M6,44 L48,8 L90,44"/>
             <path d="M72,44 L78,28"/>
@@ -273,11 +254,10 @@
             <path d="M22,72 L20,80 M48,72 L48,80 M74,72 L76,80"/>
           </svg>
           <h3>Solo</h3>
-          <p>Piano &amp; voice — intimate and versatile</p>
+          <p id="cms-solo_description">Piano &amp; voice — intimate and versatile</p>
         </div>
 
         <div class="format-card">
-          <!-- Duo: guitar body + mic stand -->
           <svg class="format-svg" viewBox="0 0 96 76" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M17,44 Q7,42 8,28 Q10,14 24,14 Q38,14 40,28 Q42,42 31,44 Q42,46 42,58 Q40,74 24,74 Q8,74 6,58 Q4,46 17,44 Z"/>
             <circle cx="24" cy="56" r="6"/>
@@ -290,11 +270,10 @@
             <path d="M84,20 Q80,14 82,10 Q84,6 88,8 Q92,10 90,16 Q88,20 84,20"/>
           </svg>
           <h3>Duo</h3>
-          <p>Guitar &amp; vocals with Jim Shultz</p>
+          <p id="cms-duo_description">Guitar &amp; vocals with Jim Shultz</p>
         </div>
 
         <div class="format-card">
-          <!-- Trio: three figures with raised arms + musical notes -->
           <svg class="format-svg" viewBox="0 0 96 76" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="18" cy="14" r="5"/>
             <path d="M18,19 L18,38"/>
@@ -318,11 +297,10 @@
             <circle cx="62" cy="13" r="3"/>
           </svg>
           <h3>Trio</h3>
-          <p>Honey — acappella harmony group</p>
+          <p id="cms-trio_description">Honey — acappella harmony group</p>
         </div>
 
         <div class="format-card">
-          <!-- Full band: five figures — bass, drums, horn, vocal, keys -->
           <svg class="format-svg" viewBox="0 0 96 76" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="8" cy="14" r="4"/>
             <path d="M8,18 L8,34"/>
@@ -353,24 +331,11 @@
             <path d="M84,38 L84,46 M88,38 L88,46 M92,38 L92,46"/>
           </svg>
           <h3>Full Band</h3>
-          <p>The Sunny Siders — 7-piece jazz ensemble</p>
+          <p id="cms-band_description">The Sunny Siders — 7-piece jazz ensemble</p>
         </div>
 
       </div>
 
-      <!-- VIDEO EMBED
-           Currently shown as a thumbnail link because embedding is disabled on this video.
-           To switch to a full embed:
-             1. Go to YouTube Studio → Content → select the video → Details → More options
-             2. Check "Allow embedding" and save
-             3. Replace the <a class="video-thumb-link"> block below with:
-           <div class="video-wrap" aria-label="Suzanne Gay performance video">
-             <iframe src="https://www.youtube.com/embed/_3nNeD6kusQ"
-               title="Suzanne Gay — Live Performance"
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-               allowfullscreen loading="lazy"></iframe>
-           </div>
-           ===================================================================== -->
       <a
         class="video-thumb-link reveal"
         href="https://youtu.be/_3nNeD6kusQ"
@@ -388,9 +353,8 @@
         </span>
       </a>
 
-      <!-- EDIT: email address below -->
       <div class="performing-cta reveal">
-        <a href="mailto:suzmuzik@gmail.com" class="btn btn-navy">Get in Touch</a>
+        <a href="mailto:suzmuzik@gmail.com" class="btn btn-navy" id="cms-contact_email">Get in Touch</a>
       </div>
     </div>
   </section>
@@ -398,22 +362,18 @@
 
   <!-- ============================================================
        WAITLIST SIGNUP
-       EDIT: replace REPLACE_WITH_FORM_ID with your Formspree form ID
-         1. formspree.io → create account → new form → copy ID
        ============================================================ -->
   <section id="waitlist">
     <div class="container">
       <div class="waitlist-inner">
         <span class="section-label reveal">Stay in the Loop</span>
-        <h2 class="reveal">Join the Waitlist</h2>
+        <h2 class="reveal" id="cms-waitlist_heading">Join the Waitlist</h2>
         <hr class="gold-rule" />
 
-        <!-- EDIT: copy text -->
-        <p class="reveal">
+        <p class="reveal" id="cms-waitlist_description">
           Lessons are currently at reduced capacity. Drop your name and email below and I'll be in touch when spots open up in September.
         </p>
 
-        <!-- Waitlist form -->
         <form
           class="signup-form reveal"
           id="waitlist-form"
@@ -421,7 +381,6 @@
           method="POST"
           novalidate
         >
-          <!-- Honeypot — leave as-is -->
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
           <div class="form-row">
@@ -450,7 +409,6 @@
           <button type="submit" class="btn btn-primary">Add Me to the Waitlist</button>
         </form>
 
-        <!-- Thank-you message — shown by JS after successful submit -->
         <div class="form-thankyou" id="form-thankyou" role="alert" aria-live="polite" tabindex="-1">
           <p>
             <strong>You're on the list!</strong><br />
@@ -467,7 +425,6 @@
 
   <!-- ============================================================
        FOOTER
-       EDIT: phone, links, tagline
        ============================================================ -->
   <footer>
     <div class="container">
@@ -475,18 +432,16 @@
 
         <div class="footer-brand">
           <a href="#hero" class="nav-logo" aria-label="Back to top">Suzanne Gay <span>Music</span></a>
-          <p class="footer-tagline">Pianist · Vocalist · Composer</p>
-          <p class="footer-tagline" style="margin-top:0.3rem;">Salt Spring Island, BC</p>
+          <p class="footer-tagline" id="cms-footer_tagline">Pianist · Vocalist · Composer</p>
+          <p class="footer-tagline" id="cms-footer_location" style="margin-top:0.3rem;">Salt Spring Island, BC</p>
         </div>
 
         <div class="footer-contact">
-          <!-- EDIT: phone number and email -->
-          <p><a href="tel:+12502217464">250-221-7464</a></p>
-          <p><a href="mailto:suzmuzik@gmail.com">suzmuzik@gmail.com</a></p>
+          <p><a href="tel:+12502217464" id="cms-footer_phone">250-221-7464</a></p>
+          <p><a href="mailto:suzmuzik@gmail.com" id="cms-contact_phone">suzmuzik@gmail.com</a></p>
         </div>
 
         <div class="footer-social">
-          <!-- EDIT: social links -->
           <a href="https://www.facebook.com/suzmuzik/" target="_blank" rel="noopener">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
             Facebook
@@ -580,8 +535,36 @@
     });
   </script>
 
-  <!-- Animations (GSAP + Lenis) — loaded last so DOM is ready -->
+  <!-- Animations -->
   <script src="animations.js"></script>
+
+  <!-- CMS content fetch — populates all cms-* elements from OBDesign CMS -->
+  <script>
+    (function() {
+      const CMS_API = 'https://obdesign-cms-production.up.railway.app/content/suzanne-site';
+      fetch(CMS_API)
+        .then(r => r.json())
+        .then(data => {
+          (data.fields || []).forEach(field => {
+            const el = document.getElementById('cms-' + field.field_key);
+            if (!el) return;
+            if (field.field_type === 'image') {
+              if (el.tagName === 'IMG') {
+                el.src = field.field_value;
+              } else {
+                // hero-bg: update background-image via style
+                el.style.backgroundImage = "url('" + field.field_value + "')";
+              }
+            } else {
+              if (field.field_value && field.field_value.trim()) {
+                el.textContent = field.field_value;
+              }
+            }
+          });
+        })
+        .catch(() => { /* fail silently — fallback content remains */ });
+    })();
+  </script>
 
 </body>
 </html>
