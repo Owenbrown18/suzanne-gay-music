@@ -548,6 +548,7 @@
           (data.fields || []).forEach(field => {
             const el = document.getElementById('cms-' + field.field_key);
             if (!el) return;
+            if (!field.field_value || !field.field_value.trim()) return;
             if (field.field_type === 'image') {
               if (el.tagName === 'IMG') {
                 el.src = field.field_value;
@@ -555,10 +556,12 @@
                 // hero-bg: update background-image via style
                 el.style.backgroundImage = "url('" + field.field_value + "')";
               }
+            } else if (field.field_type === 'richtext') {
+              el.innerHTML = field.field_value;
+            } else if (field.field_type === 'email') {
+              el.href = 'mailto:' + field.field_value;
             } else {
-              if (field.field_value && field.field_value.trim()) {
-                el.textContent = field.field_value;
-              }
+              el.textContent = field.field_value;
             }
           });
         })
