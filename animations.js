@@ -14,7 +14,7 @@
   }
 
   // ── 1. Hero entrance — staggered fade-up on load ──────────────
-  const heroEls = ['.hero-eyebrow', '.hero-content h1', '.hero-sub', '.hero-ctas .btn'];
+  const heroEls = ['.hero-content h1', '.hero-sub', '.hero-email-form'];
   gsap.from(heroEls, {
     opacity: 0,
     y: 22,
