@@ -11,11 +11,11 @@
   <meta property="og:type"        content="website" />
   <meta property="og:title"       content="Book Suzanne Gay | Performances &amp; Events" />
   <meta property="og:description" content="Live music for weddings, funerals, and private events on Salt Spring Island and beyond. Multiple formats available." />
-  <meta property="og:image"       content="assests/Photos of Suzanne/Suzanne-Performing.JPG" />
+  <meta property="og:image"       content="assests/Abstract Art Photos/Suzzane-Misc.jpg" />
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="Book Suzanne Gay | Performances &amp; Events" />
   <meta name="twitter:description" content="Live music for weddings, funerals, and private events on Salt Spring Island and beyond." />
-  <meta name="twitter:image"       content="assests/Photos of Suzanne/Suzanne-Performing.JPG" />
+  <meta name="twitter:image"       content="assests/Abstract Art Photos/Suzzane-Misc.jpg" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,8 +41,24 @@
       <ul class="nav-links" id="nav-links" role="list">
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#music">Music</a></li>
+        <li><a href="index.html#upcoming-events">Shows</a></li>
         <li><a href="index.html#teaching">Lessons</a></li>
-        <li><a href="performances.html" class="active">Performances</a></li>
+        <li class="nav-item-dropdown">
+          <a href="performances.html" class="nav-dropdown-trigger active" aria-haspopup="true" aria-expanded="false">
+            Performances
+            <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <ul class="nav-dropdown" role="list">
+            <li><a href="#formats">Formats</a></li>
+            <li><a href="#weddings">Weddings</a></li>
+            <li><a href="#funerals">Memorials</a></li>
+            <li><a href="#private-parties">Private Events</a></li>
+            <li><a href="#booking" class="nav-dropdown-booknow">Book Now</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#find">Find</a></li>
         <li><a href="#booking">Contact</a></li>
       </ul>
     </div>
@@ -52,10 +68,10 @@
   <!-- ============================================================
        PAGE HERO
        ============================================================ -->
-  <section id="hero">
+  <section id="hero" class="perf-hero">
     <div class="hero-bg"
-         style="background-image: url('assests/Photos of Suzanne/Suzanne-Performing.JPG'); background-position: center 20%;"
-         role="img" aria-label="Suzanne Gay performing live"></div>
+         style="background-image: url('assests/Abstract Art Photos/Suzzane-Misc.jpg'); background-position: center 45%;"
+         role="img" aria-label="Close-up of hands on a piano"></div>
     <div class="hero-overlay" aria-hidden="true"></div>
     <svg class="hero-grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
       <filter id="grain-filter" x="0" y="0" width="100%" height="100%">
@@ -66,8 +82,8 @@
     </svg>
 
     <div class="container hero-content">
-      <h1>Book Suzanne Gay</h1>
-      <p class="hero-sub">Live music for weddings, funerals, and private events<br>on Salt Spring Island and beyond.</p>
+      <h1>Suzanne Gay,<br><em>live at your event.</em></h1>
+      <p class="hero-sub">Weddings, ceremonies &amp; private events.<br>Salt Spring Island and beyond.</p>
     </div>
   </section>
 
@@ -78,128 +94,102 @@
   <section id="formats">
     <div class="container">
       <span class="section-label reveal">The Music</span>
-      <h2 class="reveal">Performance Formats</h2>
+      <h2 class="reveal">How she performs</h2>
       <hr class="gold-rule" />
 
-      <div class="formats-grid formats-grid-5 reveal-stagger">
+      <div class="formats-entries reveal-stagger">
 
-        <!-- Solo -->
-        <div class="format-card">
-          <svg class="format-svg" viewBox="0 0 96 82" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M6,44 L48,8 L90,44"/>
-            <path d="M72,44 L78,28"/>
-            <path d="M6,44 L6,52 M90,44 L90,52"/>
-            <path d="M6,52 L6,72 L90,72 L90,52 Z"/>
-            <path d="M17,52 L17,72 M28,52 L28,72 M39,52 L39,72 M50,52 L50,72 M61,52 L61,72 M72,52 L72,72 M83,52 L83,72"/>
-            <path d="M11,52 L11,64 L22,64 L22,52 Z"/>
-            <path d="M33,52 L33,64 L44,64 L44,52 Z"/>
-            <path d="M55,52 L55,64 L66,64 L66,52 Z"/>
-            <path d="M77,52 L77,64 L86,64 L86,52 Z"/>
-            <path d="M22,72 L20,80 M48,72 L48,80 M74,72 L76,80"/>
-          </svg>
-          <h3>Solo</h3>
-          <p>Piano &amp; voice — intimate and versatile. Perfect for smaller gatherings and ceremonies.</p>
+        <div class="format-entry">
+          <div class="format-entry-num" aria-hidden="true">01</div>
+          <div class="format-entry-body">
+            <h3 class="format-entry-name">Solo</h3>
+            <p class="format-entry-desc">Piano &amp; voice — intimate and versatile. Ideal for smaller gatherings, ceremonies, and events where the music should feel personal and unhurried.</p>
+          </div>
         </div>
 
-        <!-- Duo: Jim Shultz -->
-        <div class="format-card">
-          <svg class="format-svg" viewBox="0 0 96 76" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M17,44 Q7,42 8,28 Q10,14 24,14 Q38,14 40,28 Q42,42 31,44 Q42,46 42,58 Q40,74 24,74 Q8,74 6,58 Q4,46 17,44 Z"/>
-            <circle cx="24" cy="56" r="6"/>
-            <path d="M36,22 L54,8"/>
-            <path d="M54,8 L58,4 M54,8 L59,12"/>
-            <path d="M16,64 L34,62"/>
-            <path d="M74,74 L74,28"/>
-            <path d="M68,74 L80,74"/>
-            <path d="M74,28 L84,20"/>
-            <path d="M84,20 Q80,14 82,10 Q84,6 88,8 Q92,10 90,16 Q88,20 84,20"/>
-          </svg>
-          <h3>Duo — Guitar &amp; Vocals</h3>
-          <p>Suzanne Gay + Jim Shultz on guitar. Warm, acoustic, and effortlessly intimate.</p>
+        <div class="format-entry">
+          <div class="format-entry-num" aria-hidden="true">02</div>
+          <div class="format-entry-body">
+            <p class="format-entry-eyebrow">Jim Shultz — Guitar</p>
+            <h3 class="format-entry-name">Duo</h3>
+            <p class="format-entry-desc">Suzanne Gay + Jim Shultz on guitar. Warm, acoustic, and effortlessly intimate — a favourite for ceremonies and cocktail hours.</p>
+          </div>
         </div>
 
-        <!-- Duo: Grace McNab -->
-        <div class="format-card">
-          <svg class="format-svg" viewBox="0 0 96 76" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="10" y="34" width="36" height="22" rx="2"/>
-            <path d="M10 42h36M10 50h36"/>
-            <path d="M18,34 L18,56 M26,34 L26,56 M34,34 L34,56"/>
-            <path d="M14,34 L14,46 L22,46 L22,34"/>
-            <path d="M30,34 L30,46 L38,46 L38,34"/>
-            <path d="M10,34 L10,28 L46,28 L46,34"/>
-            <path d="M28,28 L28,20 L32,16"/>
-            <circle cx="68" cy="18" r="7"/>
-            <path d="M68,25 L68,46"/>
-            <path d="M58,32 L68,37 L78,32"/>
-            <path d="M58,32 L52,22"/>
-            <path d="M68,46 L63,60 M68,46 L73,60"/>
-          </svg>
-          <h3>Duo — Piano &amp; Vocals</h3>
-          <p>Suzanne Gay + Grace McNab on piano. Rich, sophisticated, and deeply musical.</p>
+        <div class="format-entry">
+          <div class="format-entry-num" aria-hidden="true">03</div>
+          <div class="format-entry-body">
+            <p class="format-entry-eyebrow">Grace McNab — Piano</p>
+            <h3 class="format-entry-name">Duo</h3>
+            <p class="format-entry-desc">Suzanne Gay + Grace McNab on piano. Rich, sophisticated, and deeply musical — a pairing that adds harmonic depth to any occasion.</p>
+          </div>
         </div>
 
-        <!-- Trio: Sonic Cocktail -->
-        <div class="format-card">
-          <svg class="format-svg" viewBox="0 0 96 76" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="18" cy="14" r="5"/>
-            <path d="M18,19 L18,38"/>
-            <path d="M10,24 L18,28 L26,24"/>
-            <path d="M10,24 L5,14"/>
-            <path d="M18,38 L13,54 M18,38 L23,54"/>
-            <circle cx="48" cy="10" r="6"/>
-            <path d="M48,16 L48,38"/>
-            <path d="M39,23 L48,27 L57,23"/>
-            <path d="M39,23 L32,12"/>
-            <path d="M57,23 L64,12"/>
-            <path d="M48,38 L42,54 M48,38 L54,54"/>
-            <circle cx="78" cy="14" r="5"/>
-            <path d="M78,19 L78,38"/>
-            <path d="M70,24 L78,28 L86,24"/>
-            <path d="M86,24 L91,14"/>
-            <path d="M78,38 L73,54 M78,38 L83,54"/>
-            <path d="M26,4 L26,12"/>
-            <circle cx="24" cy="13" r="3"/>
-            <path d="M64,4 L64,12"/>
-            <circle cx="62" cy="13" r="3"/>
-          </svg>
-          <h3>Trio — Sonic Cocktail</h3>
-          <p>Suzanne Gay + Jim Shultz + Bruce Grey. Jazz, soul, blues &amp; pop — the full experience.</p>
+        <div class="format-entry format-entry--featured">
+          <div class="format-entry-num" aria-hidden="true">04</div>
+          <div class="format-entry-body">
+            <p class="format-entry-eyebrow">Jim Shultz · Bruce Grey · Suzanne Gay</p>
+            <h3 class="format-entry-name">Sonic Cocktail<br><em>Trio</em></h3>
+            <p class="format-entry-desc">Jazz, soul, blues &amp; pop — spontaneous and full of life. The Sonic Cocktail Trio brings energy, depth, and the kind of musical interplay that fills a room and keeps people listening. The signature ensemble for events that call for something truly memorable.</p>
+          </div>
         </div>
 
-        <!-- Full Band -->
-        <div class="format-card">
-          <svg class="format-svg" viewBox="0 0 96 76" fill="none" stroke="#c9a84c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="8" cy="14" r="4"/>
-            <path d="M8,18 L8,34"/>
-            <path d="M3,22 L8,26 L13,22"/>
-            <path d="M8,34 L5,48 M8,34 L11,48"/>
-            <path d="M4,26 L4,12 L7,10"/>
-            <circle cx="26" cy="14" r="4"/>
-            <path d="M26,18 L26,34"/>
-            <path d="M21,22 L26,26 L31,22"/>
-            <path d="M21,22 L16,12 M31,22 L36,12"/>
-            <path d="M26,34 L23,48 M26,34 L29,48"/>
-            <circle cx="26" cy="54" r="10"/>
-            <circle cx="48" cy="10" r="5"/>
-            <path d="M48,15 L48,34"/>
-            <path d="M42,22 L48,26 L54,22"/>
-            <path d="M48,34 L44,50 M48,34 L52,50"/>
-            <path d="M54,22 L66,22 Q72,22 74,28 Q72,34 66,32 L56,28"/>
-            <path d="M74,28 Q78,32 76,38 Q74,42 70,40"/>
-            <circle cx="70" cy="14" r="4"/>
-            <path d="M70,18 L70,34"/>
-            <path d="M65,22 L70,26 L75,22"/>
-            <path d="M70,34 L67,48 M70,34 L73,48"/>
-            <circle cx="88" cy="14" r="4"/>
-            <path d="M88,18 L88,34"/>
-            <path d="M83,22 L88,26 L93,22"/>
-            <path d="M88,34 L85,48 M88,34 L91,48"/>
-            <path d="M80,38 L94,38 L94,46 L80,46 L80,38"/>
-            <path d="M84,38 L84,46 M88,38 L88,46 M92,38 L92,46"/>
-          </svg>
-          <h3>Full Band</h3>
-          <p>The complete band experience — energy, depth, and presence for larger events and festivals.</p>
+        <div class="format-entry">
+          <div class="format-entry-num" aria-hidden="true">05</div>
+          <div class="format-entry-body">
+            <h3 class="format-entry-name">Full Band</h3>
+            <p class="format-entry-desc">Energy, presence, and depth for larger events, festivals, and celebrations that call for the full sound.</p>
+          </div>
         </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Transition: formats list → event photo sections -->
+  <div class="events-curtain" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       WEDDINGS
+       ============================================================ -->
+  <section id="weddings" class="event-section">
+    <div class="event-section-bg"
+         style="background-image: url('assests/Abstract Art Photos/4 panels (3).jpeg'); background-position: center 45%;"
+         aria-hidden="true"></div>
+    <div class="event-section-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="event-section-inner">
+
+        <div class="event-section-content">
+          <span class="section-label reveal">Weddings</span>
+          <h2 class="reveal">Your wedding,<br><em>in sound.</em></h2>
+          <hr class="gold-rule" />
+          <div class="event-section-body">
+            <p>A wedding is a love story told in a single day. The music you choose isn't background — it's memory, woven into every moment from the processional walk to the last slow dance. Suzanne shapes the emotional arc of your celebration with warmth, care, and genuine musicality.</p>
+            <p>Every set is tailored to your vision: soft solo piano in a garden, acoustic duo for the ceremony, or the full trio filling an evening reception with jazz and soul. Nothing is off-the-shelf.</p>
+          </div>
+          <ul class="event-detail-list">
+            <li>Processional &amp; recessional</li>
+            <li>Signing music &amp; ceremony accompaniment</li>
+            <li>Cocktail hour background music</li>
+            <li>Reception &amp; dinner sets</li>
+            <li>First dance accompaniment</li>
+          </ul>
+        </div>
+
+        <aside class="event-section-aside">
+          <div class="event-aside-block">
+            <h4>Available Formats</h4>
+            <ul>
+              <li>Solo — Piano &amp; voice</li>
+              <li>Duo — Guitar &amp; vocals</li>
+              <li>Duo — Piano &amp; vocals</li>
+              <li>Trio — Sonic Cocktail</li>
+              <li>Full Band</li>
+            </ul>
+          </div>
+          <a href="#booking" class="event-aside-cta">Book for a Wedding <span aria-hidden="true">→</span></a>
+        </aside>
 
       </div>
     </div>
@@ -207,58 +197,94 @@
 
 
   <!-- ============================================================
-       EVENT TYPES
+       FUNERALS & MEMORIALS
        ============================================================ -->
-  <section id="event-types">
+  <section id="funerals" class="event-section">
+    <div class="event-section-bg"
+         style="background-image: url('assests/Abstract Art Photos/DOC050.jpeg'); background-position: center 50%;"
+         aria-hidden="true"></div>
+    <div class="event-section-overlay" aria-hidden="true"></div>
     <div class="container">
-      <span class="section-label reveal">Occasions</span>
-      <h2 class="reveal">What Suzanne Performs For</h2>
-      <hr class="gold-rule" />
+      <div class="event-section-inner">
 
-      <div class="event-types-grid reveal-stagger">
-
-        <div class="event-type-card">
-          <div class="event-type-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="16" cy="12" r="5"/>
-              <circle cx="32" cy="12" r="5"/>
-              <path d="M8,20 Q16,28 24,20 Q32,28 40,20"/>
-              <path d="M24,20 L24,42"/>
-              <path d="M16,42 L32,42"/>
-            </svg>
+        <div class="event-section-content">
+          <span class="section-label reveal">Funerals &amp; Memorials</span>
+          <h2 class="reveal">Honouring a life<br><em>with music.</em></h2>
+          <hr class="gold-rule" />
+          <div class="event-section-body">
+            <p>Music holds what words cannot. In grief, sound reaches places that language doesn't — offering comfort, stirring memory, and creating space where loss can be honoured with beauty. Suzanne brings deep tenderness and musical sensitivity to every memorial service.</p>
+            <p>She can learn songs that carried special meaning to the person being remembered, working with families to ensure the music truly fits the moment. Nothing is treated as routine.</p>
           </div>
-          <h3>Weddings</h3>
-          <p>From the ceremony walk to the last dance, Suzanne creates an atmosphere of genuine warmth and beauty. Whether you envision soft piano during a garden ceremony or jazz standards at your reception, she tailors every set to your vision.</p>
+          <ul class="event-detail-list">
+            <li>Prelude music as guests arrive</li>
+            <li>Processional &amp; recessional</li>
+            <li>Accompaniment during the service</li>
+            <li>Graveside or interment music</li>
+            <li>Reception or gathering afterward</li>
+          </ul>
         </div>
 
-        <div class="event-type-card">
-          <div class="event-type-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M24,8 L24,28"/>
-              <ellipse cx="24" cy="30" rx="5" ry="3"/>
-              <path d="M19,33 Q14,38 16,44 Q24,40 24,44 Q24,40 32,44 Q34,38 29,33"/>
-              <path d="M20,12 Q18,10 20,8 Q22,6 20,4"/>
-              <path d="M28,12 Q30,10 28,8 Q26,6 28,4"/>
-            </svg>
+        <aside class="event-section-aside">
+          <div class="event-aside-block">
+            <h4>Available Formats</h4>
+            <ul>
+              <li>Solo — Piano &amp; voice</li>
+              <li>Duo — Guitar &amp; vocals</li>
+              <li>Duo — Piano &amp; vocals</li>
+            </ul>
           </div>
-          <h3>Funerals &amp; Memorials</h3>
-          <p>Music has a unique power to hold grief and love at the same time. Suzanne brings tenderness, respect, and deep musicality to memorial services — helping families honour a life well lived with sound that truly matches the moment.</p>
+          <div class="event-aside-note">
+            <p>All memorial bookings are handled with care and sensitivity. Please reach out directly to discuss your needs.</p>
+          </div>
+          <a href="#booking" class="event-aside-cta">Book for a Memorial <span aria-hidden="true">→</span></a>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PRIVATE PARTIES
+       ============================================================ -->
+  <section id="private-parties" class="event-section">
+    <div class="event-section-bg"
+         style="background-image: url('assests/Abstract Art Photos/Oceaney.jpeg'); background-position: center 40%;"
+         aria-hidden="true"></div>
+    <div class="event-section-overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="event-section-inner">
+
+        <div class="event-section-content">
+          <span class="section-label reveal">Private Parties &amp; Events</span>
+          <h2 class="reveal">The room<br><em>comes alive.</em></h2>
+          <hr class="gold-rule" />
+          <div class="event-section-body">
+            <p>The right music transforms a gathering into an event — and an event into a memory. Whether it's a cocktail hour that needs to feel effortless, a dinner party where the music lives just beneath the conversation, or a corporate evening with a jazz trio setting the tone, Suzanne reads the room and plays accordingly.</p>
+            <p>Lively jazz standards, impressionist solo piano, soulful ballads — the set adapts in real time to serve the night.</p>
+          </div>
+          <ul class="event-detail-list">
+            <li>Cocktail hours &amp; receptions</li>
+            <li>Dinner parties &amp; private dining</li>
+            <li>Corporate events &amp; galas</li>
+            <li>Gallery openings &amp; art events</li>
+            <li>Celebrations &amp; milestone occasions</li>
+          </ul>
         </div>
 
-        <div class="event-type-card">
-          <div class="event-type-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14,10 L14,30 Q14,36 20,36 Q26,36 26,30 L26,10"/>
-              <path d="M10,10 L30,10"/>
-              <path d="M28,16 L28,32 Q28,38 34,38 Q40,38 40,32 L40,16"/>
-              <path d="M24,16 L44,16"/>
-              <path d="M14,24 Q20,20 26,24"/>
-              <path d="M28,22 Q34,18 40,22"/>
-            </svg>
+        <aside class="event-section-aside">
+          <div class="event-aside-block">
+            <h4>Available Formats</h4>
+            <ul>
+              <li>Solo — Piano &amp; voice</li>
+              <li>Duo — Guitar &amp; vocals</li>
+              <li>Duo — Piano &amp; vocals</li>
+              <li>Trio — Sonic Cocktail</li>
+              <li>Full Band</li>
+            </ul>
           </div>
-          <h3>Private Parties</h3>
-          <p>Cocktail hours, dinner parties, corporate events, gallery openings — Suzanne sets the room at ease with music that feels alive without demanding attention. The perfect soundtrack for evenings people will remember.</p>
-        </div>
+          <a href="#booking" class="event-aside-cta">Book for Your Event <span aria-hidden="true">→</span></a>
+        </aside>
 
       </div>
     </div>
@@ -270,75 +296,95 @@
        ============================================================ -->
   <section id="booking">
     <div class="container">
-      <div class="booking-inner">
-        <span class="section-label reveal">Get in Touch</span>
-        <h2 class="reveal">Get in Touch to Book</h2>
-        <hr class="gold-rule" />
+      <div class="booking-layout">
 
-        <p class="reveal booking-intro">
-          Fill in the form below and Suzanne will get back to you within 2 business days.
-        </p>
+        <!-- ── Left: the form ─────────────────────────────── -->
+        <div class="booking-form-col">
+          <span class="section-label reveal">Book Suzanne</span>
+          <h2 class="reveal">Let's make<br><em>it happen.</em></h2>
+          <hr class="gold-rule" />
 
-        <form
-          class="signup-form booking-form reveal"
-          id="booking-form"
-          action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
-          method="POST"
-          novalidate
-        >
-          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="b-name">Name</label>
-              <input type="text" id="b-name" name="name" placeholder="Your name" required autocomplete="name" />
-            </div>
-            <div class="form-group">
-              <label for="b-email">Email</label>
-              <input type="email" id="b-email" name="email" placeholder="you@example.com" required autocomplete="email" />
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="b-phone">Phone <span class="form-optional">(optional)</span></label>
-              <input type="tel" id="b-phone" name="phone" placeholder="250-555-0100" autocomplete="tel" />
-            </div>
-            <div class="form-group">
-              <label for="b-date">Event Date <span class="form-optional">(optional)</span></label>
-              <input type="date" id="b-date" name="event_date" />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="b-type">Event Type</label>
-            <div class="select-wrap">
-              <select id="b-type" name="event_type" required>
-                <option value="" disabled selected>Choose one…</option>
-                <option value="Wedding">Wedding</option>
-                <option value="Funeral/Memorial">Funeral / Memorial</option>
-                <option value="Private Party">Private Party</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="b-message">Message / Additional Details</label>
-            <textarea id="b-message" name="message" placeholder="Tell Suzanne a bit about your event — venue, number of guests, any special requests…"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary booking-submit">Send Inquiry →</button>
-        </form>
-
-        <div class="form-thankyou" id="booking-thankyou" role="alert" aria-live="polite" tabindex="-1">
-          <p>
-            <strong>Message received!</strong><br />
-            Thank you for reaching out. Suzanne will get back to you within 2 business days.
-            <br /><br />
-            — Suzanne Gay Music
+          <p class="reveal booking-intro">
+            Tell Suzanne about your event — the occasion, the feel you're after, any special requests. She'll be in touch within two business days.
           </p>
+
+          <form
+            class="signup-form booking-form reveal"
+            id="booking-form"
+            action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+            method="POST"
+            novalidate
+          >
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="b-name">Name</label>
+                <input type="text" id="b-name" name="name" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="b-email">Email</label>
+                <input type="email" id="b-email" name="email" placeholder="you@example.com" required autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="b-phone">Phone <span class="form-optional">(optional)</span></label>
+                <input type="tel" id="b-phone" name="phone" placeholder="250-555-0100" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="b-date">Event Date <span class="form-optional">(optional)</span></label>
+                <input type="date" id="b-date" name="event_date" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="b-type">Event Type</label>
+              <div class="select-wrap">
+                <select id="b-type" name="event_type" required>
+                  <option value="" disabled selected>Choose one…</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Funeral/Memorial">Funeral / Memorial</option>
+                  <option value="Private Party">Private Party</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="b-message">Message / Additional Details</label>
+              <textarea id="b-message" name="message" placeholder="Tell Suzanne about your event — venue, number of guests, the feel you're after…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary booking-submit">Send Enquiry →</button>
+          </form>
+
+          <div class="form-thankyou" id="booking-thankyou" role="alert" aria-live="polite" tabindex="-1">
+            <p>
+              <strong>Message received.</strong><br />
+              Thank you for reaching out. Suzanne will be in touch within two business days.
+              <br /><br />
+              — Suzanne Gay Music
+            </p>
+          </div>
         </div>
+
+        <!-- ── Right: invitation aside ────────────────────── -->
+        <aside class="booking-aside reveal">
+          <blockquote class="booking-quote">
+            <p>"Every room has its own music. I just find it."</p>
+            <cite>— Suzanne Gay</cite>
+          </blockquote>
+
+          <div class="booking-contact-direct">
+            <h4>Prefer to reach out directly?</h4>
+            <a href="tel:+12502217464">250-221-7464</a>
+            <a href="mailto:suzmuzik@gmail.com">suzmuzik@gmail.com</a>
+          </div>
+
+          <p class="booking-service-note">Available for weddings, memorial services, and private events across Salt Spring Island and the Gulf Islands.</p>
+        </aside>
 
       </div>
     </div>
@@ -379,12 +425,6 @@
           </a>
         </div>
 
-        <div class="footer-pages">
-          <h4 class="footer-col-heading">Pages</h4>
-          <a href="index.html">Home</a>
-          <a href="performances.html">Performances</a>
-        </div>
-
       </div>
 
       <div class="footer-bottom">
@@ -421,9 +461,18 @@
 
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
+        // Dropdown trigger handled separately — don't close hamburger on tap
+        if (link.classList.contains('nav-dropdown-trigger')) return;
         navLinks.classList.remove('open');
         toggle.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
+        // Also collapse dropdown when any other link closes the menu
+        const dd = document.querySelector('.nav-item-dropdown');
+        if (dd) {
+          dd.classList.remove('dropdown-open');
+          const dt = dd.querySelector('.nav-dropdown-trigger');
+          if (dt) dt.setAttribute('aria-expanded', 'false');
+        }
       });
     });
 
@@ -451,12 +500,12 @@
           bookingThanks.focus();
         } else {
           btn.disabled    = false;
-          btn.textContent = 'Send Inquiry →';
+          btn.textContent = 'Send Enquiry →';
           alert('Something went wrong. Please email suzmuzik@gmail.com directly.');
         }
       } catch {
         btn.disabled    = false;
-        btn.textContent = 'Send Inquiry →';
+        btn.textContent = 'Send Enquiry →';
         alert('Could not connect. Please email suzmuzik@gmail.com directly.');
       }
     });

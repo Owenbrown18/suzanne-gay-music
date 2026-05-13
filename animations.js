@@ -73,7 +73,8 @@
   });
 
   // ── 5. ScrollSpy — highlight active nav link ──────────────────
-  const sections = document.querySelectorAll('section[id]');
+  // Include footer[id] alongside sections so #contact highlights correctly
+  const sections = document.querySelectorAll('section[id], footer[id]');
   const spyLinks = document.querySelectorAll('.nav-links a[href^="#"]');
 
   function setActiveLink(id) {
@@ -127,4 +128,30 @@
     });
   });
 
+}());
+
+// ── Performances dropdown toggle ───────────────────────────
+// Desktop: CSS :hover handles show/hide — no JS needed.
+// Mobile:  first tap on the trigger expands the inline submenu;
+//          second tap (or any sub-link click) navigates normally.
+(function () {
+  const dropdownItem = document.querySelector('.nav-item-dropdown');
+  if (!dropdownItem) return;
+
+  const trigger = dropdownItem.querySelector('.nav-dropdown-trigger');
+
+  trigger.addEventListener('click', function (e) {
+    if (window.innerWidth > 768) return; // desktop: let hover CSS take over
+    e.preventDefault();
+    const isOpen = dropdownItem.classList.toggle('dropdown-open');
+    trigger.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // Close dropdown when clicking outside on desktop
+  document.addEventListener('click', function (e) {
+    if (window.innerWidth > 768 && !dropdownItem.contains(e.target)) {
+      dropdownItem.classList.remove('dropdown-open');
+      trigger.setAttribute('aria-expanded', 'false');
+    }
+  });
 }());
