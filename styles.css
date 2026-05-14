@@ -2128,9 +2128,16 @@ footer#contact {
   }
 
   /* Dropdown — inline expansion inside hamburger menu */
-  .nav-dropdown {
+  .nav-item-dropdown {
     position: static;
-    transform: none;
+  }
+
+  .nav-dropdown {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100%;
     opacity: 1;
     visibility: visible;
     background: rgba(20, 24, 22, 0.55);
