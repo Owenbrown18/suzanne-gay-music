@@ -366,9 +366,9 @@ section {
 .hero-bg {
   position: absolute;
   inset: -15% 0;
-  background-image: url('assests/Abstract Art Photos/piano.png');
+  background-image: url('assests/New Photos/Optimized_Piano.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center 35%;
   background-repeat: no-repeat;
   animation: heroZoom 18s ease-in-out infinite alternate;
 }
@@ -382,10 +382,10 @@ section {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to bottom,
-    rgba(10, 14, 12, 0.75) 0%,
-    rgba(10, 14, 12, 0.50) 40%,
-    rgba(10, 14, 12, 0.80) 100%
+    105deg,
+    rgba(20, 24, 22, 0.96) 0%,
+    rgba(20, 24, 22, 0.90) 50%,
+    rgba(20, 24, 22, 0.62) 100%
   );
 }
 
@@ -547,6 +547,10 @@ section {
 .photo-strip-item:nth-child(3) img { object-position: center 20%; } /* close-up mic */
 .photo-strip-item:nth-child(4) img { object-position: center 15%; } /* B&W sunglasses — face high */
 .photo-strip-item:nth-child(5) img { object-position: center 28%; } /* chapel grand piano */
+.photo-strip-item:nth-child(6) img { object-position: center 78%; } /* forest — Suzanne in lower frame */
+
+/* Forest photo is portrait-oriented — give it a narrower column */
+.photo-strip-item:nth-child(6) { flex: 0.72 1 auto; }
 
 .photo-strip-item:hover img {
   transform: scale(1.04);
@@ -568,6 +572,7 @@ section {
   }
   .photo-strip-item:first-child { flex: 0 0 320px; }
   .photo-strip-item:nth-child(4) { flex: 0 0 200px; }
+  .photo-strip-item:nth-child(6) { flex: 0 0 200px; }
 }
 
 /* ── Music ────────────────────────────────────────────────── */
@@ -1083,10 +1088,57 @@ section {
   margin-top: 5rem;
 }
 
+/* Row that holds the heading + pinned student note side by side */
+.testimonials-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
 .testimonials-heading {
   font-size: 1.5rem;
   color: var(--color-text);
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+/* Pinned note — polaroid-style, slight lean */
+.student-note {
+  flex-shrink: 0;
+}
+
+.student-note img {
+  display: block;
+  width: 240px;
+  border: 7px solid rgba(240, 237, 230, 0.94);
+  border-bottom-width: 26px;       /* wider bottom border = polaroid feel */
+  border-radius: 1px;
+  box-shadow:
+    0 6px 28px rgba(0, 0, 0, 0.55),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+  transform: rotate(2.5deg);
+  filter: sepia(0.12) contrast(1.04) brightness(0.96);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.student-note img:hover {
+  transform: rotate(0deg) scale(1.03);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.6),
+    0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+  .testimonials-top {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1.4rem;
+  }
+  .student-note img {
+    width: 195px;
+  }
 }
 
 .testimonials-grid {
@@ -1150,7 +1202,7 @@ section {
 /* ── Performances Teaser ──────────────────────────────────── */
 .perf-teaser {
   position: relative;
-  min-height: 75vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   padding: 0;
@@ -1160,16 +1212,13 @@ section {
 .perf-teaser-bg {
   position: absolute;
   inset: 0;
-  background-image: url('assests/Photos of Suzanne/Suzanne-Performing.JPG');
+  background-image: url('assests/Abstract Art Photos/4 panels (3).jpeg');
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   transform: scale(1.04);
   transition: transform 0.6s ease;
 }
 
-.perf-teaser:hover .perf-teaser-bg {
-  transform: scale(1.07);
-}
 
 .perf-teaser-overlay {
   position: absolute;
@@ -1182,11 +1231,47 @@ section {
   );
 }
 
+/* Eased top fade — bg-mid (#1c2420) into photo, no hard banding */
+.perf-teaser::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 300px;
+  background: linear-gradient(
+    to bottom,
+    rgba(28, 36, 32, 1.00)  0%,
+    rgba(28, 36, 32, 0.95) 25%,
+    rgba(28, 36, 32, 0.75) 50%,
+    rgba(28, 36, 32, 0.35) 75%,
+    rgba(28, 36, 32, 0.00) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Eased bottom fade — photo back into bg-mid, no hard banding */
+.perf-teaser::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 300px;
+  background: linear-gradient(
+    to top,
+    rgba(28, 36, 32, 1.00)  0%,
+    rgba(28, 36, 32, 0.95) 25%,
+    rgba(28, 36, 32, 0.75) 50%,
+    rgba(28, 36, 32, 0.35) 75%,
+    rgba(28, 36, 32, 0.00) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
 .perf-teaser-content {
   position: relative;
-  z-index: 2;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  z-index: 3;
+  padding-top: 160px;
+  padding-bottom: 160px;
   text-align: center;
   max-width: 700px;
   margin-inline: auto;
@@ -1203,6 +1288,12 @@ section {
   margin-bottom: 1.2rem;
   text-shadow: 0 4px 40px rgba(0, 0, 0, 0.7);
   line-height: 1.05;
+}
+
+/* Teaser CTA — quiet hover, no glow (matches hero email button feel) */
+.perf-teaser-content .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: none;
 }
 
 .perf-teaser-sub {
@@ -1563,6 +1654,70 @@ footer#contact {
   line-height: 1.78;
   margin: 0;
   max-width: 560px;
+}
+
+/* Format entry with photo — two-column body layout */
+.format-entry--has-photo .format-entry-body {
+  display: grid;
+  grid-template-columns: 1fr 210px;
+  gap: 3rem;
+  align-items: center;
+}
+
+.format-entry-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 7px solid rgba(240, 237, 230, 0.94);
+  border-bottom-width: 26px;
+  border-radius: 1px;
+  box-shadow:
+    0 6px 28px rgba(0, 0, 0, 0.55),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+  transform: rotate(-1.5deg);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.format-entry-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: sepia(0.1) contrast(1.05) brightness(0.92);
+  transition: transform 0.6s ease;
+}
+
+.format-entry--has-photo:hover .format-entry-photo {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.6),
+    0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 768px) {
+  .format-entry--has-photo .format-entry-body {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    align-items: start;
+  }
+  .format-entry-photo {
+    aspect-ratio: 4 / 3;
+    max-width: 100%;
+  }
+}
+
+/* Bio inline link — "The Last River" */
+.about-text p a {
+  color: var(--color-gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(201, 168, 76, 0.45);
+  transition: text-decoration-color 0.2s;
+}
+
+.about-text p a:hover {
+  text-decoration-color: var(--color-gold);
 }
 
 /* Sonic Cocktail — elevated through scale and typography alone.
