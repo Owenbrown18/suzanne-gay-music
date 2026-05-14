@@ -1705,6 +1705,9 @@ footer#contact {
     aspect-ratio: 4 / 3;
     max-width: 100%;
   }
+  .format-entry-photo img {
+    object-position: center 80%;
+  }
 }
 
 /* Bio inline link — "The Last River" */
