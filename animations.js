@@ -73,25 +73,30 @@
   });
 
   // ── 5. ScrollSpy — highlight active nav link ──────────────────
-  // Include footer[id] alongside sections so #contact highlights correctly
-  const sections = document.querySelectorAll('section[id], footer[id]');
-  const spyLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  // Skip on pages that already have a hardcoded active nav link
+  // (e.g. performances.html), so scroll position can't override it.
+  const hasHardcodedActive = document.querySelector('.nav-links a.active');
 
-  function setActiveLink(id) {
-    spyLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+  if (!hasHardcodedActive) {
+    const sections = document.querySelectorAll('section[id], footer[id]');
+    const spyLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+    function setActiveLink(id) {
+      spyLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+      });
+    }
+
+    sections.forEach(section => {
+      ScrollTrigger.create({
+        trigger: section,
+        start: 'top 55%',
+        end: 'bottom 55%',
+        onEnter:     () => setActiveLink(section.id),
+        onEnterBack: () => setActiveLink(section.id),
+      });
     });
   }
-
-  sections.forEach(section => {
-    ScrollTrigger.create({
-      trigger: section,
-      start: 'top 55%',
-      end: 'bottom 55%',
-      onEnter:     () => setActiveLink(section.id),
-      onEnterBack: () => setActiveLink(section.id),
-    });
-  });
 
   // ── 6. Parallax on hero background ───────────────────────────
   gsap.to('.hero-bg', {
