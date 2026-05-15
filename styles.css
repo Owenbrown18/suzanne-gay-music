@@ -1601,6 +1601,13 @@ footer#contact {
 
 .footer-bottom a:hover { opacity: 0.75; }
 
+.footer-art-credit {
+  margin-top: 0.4rem;
+  font-size: 0.72rem;
+  font-style: italic;
+  color: rgba(240, 237, 230, 0.22);
+}
+
 /* ── Performances page ────────────────────────────────────── */
 
 /* Hero size override — two-line heading, room to breathe */
