@@ -167,11 +167,17 @@ section {
   width: 100%;
   z-index: 100;
   padding: 1rem 0;
+  background: rgba(20, 24, 22, 0.58);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(201, 168, 76, 0.1);
   transition: background 0.3s, box-shadow 0.3s;
 }
 
 #site-nav.scrolled {
-  background: rgba(20, 24, 22, 0.97);
+  background: rgba(20, 24, 22, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
 }
 
