@@ -389,8 +389,9 @@ section {
   );
 }
 
-/* Home hero — lighter overlay so the piano photo reads clearly */
-#hero:not(.perf-hero) .hero-overlay {
+/* Home and performances heroes — lighter overlay so photos read clearly */
+#hero:not(.perf-hero) .hero-overlay,
+.perf-hero .hero-overlay {
   background: linear-gradient(
     105deg,
     rgba(20, 24, 22, 0.70) 0%,
