@@ -389,6 +389,16 @@ section {
   );
 }
 
+/* Home hero — lighter overlay so the piano photo reads clearly */
+#hero:not(.perf-hero) .hero-overlay {
+  background: linear-gradient(
+    105deg,
+    rgba(20, 24, 22, 0.70) 0%,
+    rgba(20, 24, 22, 0.52) 50%,
+    rgba(20, 24, 22, 0.22) 100%
+  );
+}
+
 .hero-content {
   position: relative;
   z-index: 3;
